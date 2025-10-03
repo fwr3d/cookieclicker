@@ -1,0 +1,100 @@
+COOKIE CLICKER - UNBLOCKED VERSION CHEAT SHEET
+================================================
+
+BASIC CHEATS (Open browser console with F12, then paste these):
+
+// Add 1 million cookies
+Game.cookies += 1000000;
+
+// Add 1 billion cookies  
+Game.cookies += 1000000000;
+
+// Add 1 trillion cookies
+Game.cookies += 1000000000000;
+
+// Set cookies to specific amount
+Game.cookies = 1000000000000;
+
+// Add 100 of all buildings
+for (let i in Game.Objects) {
+    Game.Objects[i].amount += 100;
+}
+
+// Unlock all achievements
+for (let i in Game.Achievements) {
+    Game.Achievements[i].won = 1;
+}
+
+// Add 1000 sugar lumps
+Game.lumps += 1000;
+
+// Set CPS to 1 million
+Game.cookiesPs = 1000000;
+
+// Unlock all upgrades
+for (let i in Game.Upgrades) {
+    Game.Upgrades[i].bought = 1;
+}
+
+// Complete all research
+for (let i in Game.Upgrades) {
+    if (Game.Upgrades[i].type === 'tech') {
+        Game.Upgrades[i].bought = 1;
+    }
+}
+
+// Spawn golden cookie
+Game.spawnGoldenCookie();
+
+// Spawn reindeer
+Game.spawnReindeer();
+
+// Add heavenly chips
+Game.heavenlyChips += 1000;
+
+// Set prestige level
+Game.prestige = 10;
+
+// Complete all minigames
+Game.Unlock('Garden');
+Game.Unlock('Pantheon');
+Game.Unlock('Grimoire');
+Game.Unlock('Bank');
+Game.Unlock('Temple');
+Game.Unlock('Wizard tower');
+Game.Unlock('Shipment');
+Game.Unlock('Alchemy lab');
+Game.Unlock('Portal');
+Game.Unlock('Time machine');
+Game.Unlock('Antimatter condenser');
+Game.Unlock('Prism');
+Game.Unlock('Chancemaker');
+Game.Unlock('Fractal engine');
+Game.Unlock('Javascript console');
+Game.Unlock('Idleverse');
+
+// Save game
+Game.Save();
+
+// Load game
+Game.Load();
+
+// Export save
+Game.ExportSave();
+
+// Import save (paste your save code)
+Game.ImportSave('YOUR_SAVE_CODE_HERE');
+
+QUICK SHORTCUTS:
+- F12: Open browser console
+- Ctrl+Shift+I: Alternative console access
+- Ctrl+S: Save game
+- Ctrl+L: Load game
+
+TIPS:
+- Always save before using cheats
+- Some cheats may disable achievements temporarily
+- Use Game.Save() after making changes
+- You can combine multiple cheats in one paste
+
+ENJOY YOUR UNBLOCKED COOKIE CLICKER!
