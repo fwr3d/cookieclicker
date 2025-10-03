@@ -62,15 +62,14 @@ function addMagicDecimals(Game, M) {
 /** Adds the cookies gained per click next to the cookies per second text */
 function addCookiesPerClick(Game, text) {
     return text += format(
-        '<div id="cookiesPerSecond" style="font-size:50%;">per second/click : ${}/${}</div>',
+        '<div id="cookiesPerSecond" style="font-size:50%;">per second : ${}</div>',
 
         format(
             '<span style="color:${};">${}</span>',
 
             (Game.cpsSucked > 0) ? (Game.prefs.fancy ? '#dd4949' : '#ff9292') : 'inherit',
             Beautify( Game.cookiesPs * (1 - Game.cpsSucked), 1 )
-        ),
-        Beautify( Game.computedMouseCps, 1 ),
+        )
     )
 }
 
